@@ -1,0 +1,12 @@
+[
+  {
+    "contract": "NeoToken",
+    "operation": "transfer",
+    "args": [
+      "@Denis",
+      "0x2e4c90351c1e75c108e593d5d3a60dc1115192e0",
+      100,
+      "none"
+    ]
+  }
+]
