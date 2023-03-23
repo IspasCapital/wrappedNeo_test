@@ -1,0 +1,9 @@
+[
+  {
+    "contract": "wNeo",
+    "operation": "balanceOf",
+    "args": [
+      "@Denis"
+    ]
+  }
+]
