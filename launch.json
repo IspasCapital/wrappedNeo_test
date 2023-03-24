@@ -1,26 +1,12 @@
-{
-    "version": "0.2.0",
-    "$schema": "vscode://schemas/launch",
-    "configurations": [
         {
             "name": "balanceOf",
             "type": "neo-contract",
             "request": "launch",
-            "preLaunchTask": "build",
-            "program": "C:\\Neo\\wrappedneo_test\\wNeo.nef",
-            "neo-express": "C:\\Neo\\wrappedneo_test\\default.neo-express",
+            "program": "${workspaceFolder}/wNeo.nef",
+            "neo-express": "${workspaceFolder}/default.neo-express",
             "invocation": {
                 "operation": "balanceOf",
-                "args": [
-                    "@Denis"
-                ]
+                "args": ["@Denis"]
             },
-            "signers": [
-                "@Denis"
-            ],
-            "return-types": [
-                "int"
-            ]
+            "storage": []
         }
-    ]
-}
