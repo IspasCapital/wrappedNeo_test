@@ -1,0 +1,12 @@
+{
+    "name": "balanceOf",
+    "type": "neo-contract",
+    "request": "launch",
+    "program": "${workspaceFolder}/wNeo.nef",
+    "neo-express": "${workspaceFolder}/default.neo-express",
+    "invocation": {
+        "operation": "balanceOf",
+        "args": ["@Denis"]
+    },
+    "storage": []
+}
