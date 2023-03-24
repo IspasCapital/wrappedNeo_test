@@ -1,12 +1,19 @@
 {
-    "name": "balanceOf",
-    "type": "neo-contract",
-    "request": "launch",
-    "program": "${workspaceFolder}/wNeo.nef",
-    "neo-express": "${workspaceFolder}/default.neo-express",
-    "invocation": {
-        "operation": "balanceOf",
-        "args": ["@Denis"]
-    },
-    "storage": []
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "wNeo.nef",
+            "type": "neo-contract",
+            "request": "launch",
+            "program": "${workspaceFolder}/wNeo.nef",
+            "neo-express": "${workspaceFolder}/default.neo-express",
+            "invocation": {
+                "operation": "balanceOf",
+                "args": ["@Denis"]
+            },
+            "storage": []
+    ]
 }
