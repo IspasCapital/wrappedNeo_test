@@ -40,7 +40,7 @@ OWNER = UInt160()
 SUPPLY_KEY = 'totalSupply'
 
 # Symbol of the Token
-TOKEN_SYMBOL = 'zNEO'
+TOKEN_SYMBOL = 'wNEO'
 
 # Number of decimal places
 TOKEN_DECIMALS = 8

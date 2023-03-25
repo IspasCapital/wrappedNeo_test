@@ -145,7 +145,7 @@
             },
             {
                 "name": "_deploy",
-                "offset": 945,
+                "offset": 951,
                 "parameters": [
                     {
                         "name": "data",
@@ -181,30 +181,13 @@
             },
             {
                 "name": "_initialize",
-                "offset": 997,
+                "offset": 1003,
                 "parameters": [],
                 "returntype": "Void",
                 "safe": false
             }
         ],
         "events": [
-            {
-                "name": "Transfer",
-                "parameters": [
-                    {
-                        "name": "from_addr",
-                        "type": "Any"
-                    },
-                    {
-                        "name": "to_addr",
-                        "type": "Any"
-                    },
-                    {
-                        "name": "amount",
-                        "type": "Integer"
-                    }
-                ]
-            },
             {
                 "name": "Approval",
                 "parameters": [
@@ -215,6 +198,23 @@
                     {
                         "name": "spender",
                         "type": "Hash160"
+                    },
+                    {
+                        "name": "amount",
+                        "type": "Integer"
+                    }
+                ]
+            },
+            {
+                "name": "Transfer",
+                "parameters": [
+                    {
+                        "name": "from_addr",
+                        "type": "Any"
+                    },
+                    {
+                        "name": "to_addr",
+                        "type": "Any"
                     },
                     {
                         "name": "amount",
