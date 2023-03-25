@@ -401,6 +401,7 @@ def onNEP17Payment(from_address: UInt160, amount: int, data: Any):
     :param data: any pertinent data that might validate the transaction
     :type data: Any
     """
+    assert len(from_address) == 20
 
     # Use calling_script_hash to identify if the incoming token is NEO
     if runtime.calling_script_hash == NEO_SCRIPT:

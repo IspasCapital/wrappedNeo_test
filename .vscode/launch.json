@@ -5,15 +5,41 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "wNeo.nef",
+            "name": "wNeo_mint",
             "type": "neo-contract",
             "request": "launch",
             "program": "${workspaceFolder}/wNeo.nef",
             "neo-express": "${workspaceFolder}/default.neo-express",
             "invocation": {
-                "operation": "balanceOf",
-                "args": ["@Denis"]
+                "contract": "NeoToken",
+                "operation": "transfer",
+                "args": [
+                    "@Denis",
+                    "#wNeo",
+                    10,
+                    "none"
+                ]
             },
-            "storage": []
+            "signers": [
+                "@Denis"
+            ]
+        },
+        {
+            "name": "wNeo_burn",
+            "type": "neo-contract",
+            "request": "launch",
+            "program": "${workspaceFolder}/wNeo.nef",
+            "neo-express": "${workspaceFolder}/default.neo-express",
+            "invocation": {
+                "operation": "burn",
+                "args": [
+                    "@Denis",
+                    10,
+            ]
+            },
+            "signers": [
+                "@Denis"
+            ]
+        }
     ]
 }
